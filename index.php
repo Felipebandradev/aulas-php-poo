@@ -51,6 +51,9 @@
         <h2>Assuntos abordados:</h2>
         <ul>
             <li>Herança (Super classe e Sub Classe)</li>
+            <li>Métodos/propriedades protegidos (acessiveis apenas pela classe em que foram definidos pelas subclasses)</li>
+            <li>Classe Abstrata</li>
+            <li>Classe Final</li>
            
         </ul>
 
@@ -66,9 +69,9 @@
 
           // colocar um nome 
 
-          $clientePF->setNome("Maria do Bairro");
-          $clientePF->setEmail("mariadb@sql.com");
-          $clientePF->setIdade(50);
+          $clientePF->setNome("Doja cat Womans");
+          $clientePF->setEmail("amaoiral@odeiomeusfas.com");
+          $clientePF->setIdade(26);
           $clientePF->setCpf("123.456.789-10");
         
 
@@ -85,6 +88,10 @@
 
         <pre><?=var_dump($clientePF)?></pre>
 
+        <h2>clientePJ</h2>
+
+        <pre><?=var_dump($clientePJ)?></pre>
+
         <hr>
 
         <article class="caixa">
@@ -100,14 +107,13 @@
                 </ul>
             </section>
             <section class="cartao">
-                <h2>clientePJ </h2>
-                <h2><img src="https://assets.papelpop.com/wp-content/uploads/2021/08/doja-cat.png" alt="scarlet persna de doja cat"></h2>
+                <h2>clientePF </h2>
+                <h2><img src="https://assets.papelpop.com/wp-content/uploads/2021/08/doja-cat.png" alt=" doja cat"></h2>
                 <ul>
-                    <li><b>Nome: </b><?=$clientePJ->getNome()?></li>
-                    <li><b>Email: </b><?=$clientePJ->getEmail()?></li>
-                    <li><b>Ano: </b><?=$clientePJ->getAnoFundacao()?></li>
-                    <li><b>Cnpj: </b><?=$clientePJ->getCnpj()?></li>
-                    <li><b>Nome Fantasia: </b><?=$clientePJ->getNomeFantasia()?></li>
+                    <li><b>Nome: </b><?=$clientePF->getNome()?></li>
+                    <li><b>Email: </b><?=$clientePF->getEmail()?></li>
+                    <li><b>Idade: </b><?=$clientePF->getIdade()?></li>
+                    <li><b>Cpf: </b><?=$clientePF->getCpf()?></li>
                 </ul>
             </section>
         </article>
