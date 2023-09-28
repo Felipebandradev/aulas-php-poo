@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 06</title>
+    <title>Exemplo 07</title>
 
     <style>
 
@@ -61,11 +61,13 @@
 </head>
 <body>
     <main>
-        <h1>PHP com POO - Exemplo 6</h1>
+        <h1>PHP com POO - Exemplo 7</h1>
         <hr>
         <h2>Assuntos abordados:</h2>
         <ul>
-            <li>Polimorfismos</li>           
+            <li>Polimorfismo</li>
+            <li>Sobreposição de métodos</li>
+            <li>Uso do <code>parent</code> para acessar superclasse</li>           
         </ul>
 
         <hr>
