@@ -13,7 +13,20 @@ abstract class Cliente {
     private string $situacao = "a definir";
 
    
+
+
     /* Métodos getters e setters */
+
+    public function exibirDados(): void
+    {
+        echo "<h3>Método Exibir Dados - Classe Cliente </h3>";
+      //  echo "<h4> $this->nome </h4>"; // ou
+        echo "<h4>".$this->getNome()."</h4>";
+
+        echo "<p>Situação: $this->situacao </p>";
+
+    }
+
     public function setNome(string $nome):void {
         $this->nome = $nome;
     }
@@ -39,12 +52,6 @@ abstract class Cliente {
     }
 
 
-    /* Visisbilidade Pratected
-    estes Getter e Setters poderão ser usados APENAS
-    aqui (classe cliente) e nas subclasses 
-    (pessoa Fisica e Pessoa Juridica)
-    
-    */
     
     protected function getSituacao(): string
     {

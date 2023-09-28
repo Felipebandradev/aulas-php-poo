@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 05</title>
+    <title>Exemplo 06</title>
 
     <style>
 
@@ -61,15 +61,11 @@
 </head>
 <body>
     <main>
-        <h1>PHP com POO - Exemplo 5</h1>
+        <h1>PHP com POO - Exemplo 6</h1>
         <hr>
         <h2>Assuntos abordados:</h2>
         <ul>
-            <li>Herança (Super classe e Sub Classe)</li>
-            <li>Métodos/propriedades protegidos (acessiveis apenas pela classe em que foram definidos pelas subclasses)</li>
-            <li>Classe Abstrata: Não Permitir Intancias/Objetos, Serve apenas de modelo para subclasses</li>
-            <li>Classe Final: não permite herança, ou seja, não aceita criação de subclasses</li>
-           
+            <li>Polimorfismos</li>           
         </ul>
 
         <hr>
@@ -100,14 +96,6 @@
           $clientePJ->setNome("Doja Cat");
           $clientePJ->setNomeFantasia("Scarlet");
 
-          require_once "src/Mei.php";
-
-          $clienteMei = new Mei;
-
-          $clienteMei->setNome("Jão");
-          $clienteMei->setNomeFantasia("Super");
-          $clienteMei->setAnoFundacao(2023);
-          $clienteMei->setAreaDeAtuacao("Musicas Nacionais");
         ?>
 
         <pre><?=var_dump($clientePF)?></pre>
@@ -115,10 +103,7 @@
         <h2>clientePJ</h2>
 
         <pre><?=var_dump($clientePJ)?></pre>
-
-        <h2>Cliente Mei</h2>
-
-        <pre><?=var_dump($clienteMei)?></pre>
+    
 
         <hr>
 
@@ -144,17 +129,23 @@
                     <li><b>Cpf: </b><?=$clientePF->getCpf()?></li>
                 </ul>
             </section>
-            <section class="cartao ">
-                <h2>clienteMei </h2>
-                <h2><img src="https://i.scdn.co/image/ab6761610000e5ebbadd159b5a79377deefa6336" alt=" doja cat"></h2>
-                <ul>
-                    <li><b>Nome: </b><?=$clienteMei->getNome()?></li>
-                    <li><b>Area de Atuação: </b><?=$clienteMei->getAreaDeAtuacao()?></li>
-                    <li><b>Ano: </b><?=$clienteMei->getAnoFundacao()?></li>
-                    <li><b>Nome Fantasia: </b><?=$clienteMei->getNomeFantasia()?></li>
-                </ul>
-            </section>
+
         </article>
+        <hr>
+
+        <h2>Saída de Dados</h2>
+
+        <section>
+            <h2>ClientePF</h2>
+            <?=$clientePF->exibirDados()?>
+
+           <h2>clientePJ</h2>
+
+           <?=$clientePJ->exibirDados()?>
+
+        </section>
+
+
 
     </main>
 </body>
