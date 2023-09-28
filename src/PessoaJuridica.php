@@ -13,6 +13,17 @@ class PessoaJuridica extends Cliente{
         // acessando o metodo setter protegido
         $this->setSituacao("em analise");
     }
+
+    public function exibirDados(): void
+    {
+        echo "<h3>Método Exibir Dados - Classe Pessoa Juridica - Polimorfismo de sobreposição</h3>";
+        // Ophp só aceita esse tipo
+        //  echo "<h4> $this->nome </h4>"; essa linha não ira funcionar pois o atributo nome é privado e da classe cliente
+          echo "<h4>".$this->getNome()."</h4>";
+  
+          echo "<p>Situação:". $this->getSituacao()." </p>";
+          echo "<p>Noem Fantasia: $this->nomeFantasia </p>";
+    }
    
     public function getAnoFundacao(): int
     {
