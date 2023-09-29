@@ -1,0 +1,5 @@
+<?php //prestadores
+
+class Pagamento{
+    
+}
