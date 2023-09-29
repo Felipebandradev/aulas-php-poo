@@ -19,12 +19,13 @@
 
         .artistAlbum {
             padding: 0;
-            background-color: cadetblue;
+            /* background-color: cadetblue; */
             border-radius: 10px;
+            width: 400px;
         }
 
         .artistAlbum img {
-            width: 280px;
+            width: 400px;
             border-radius: 10px 10px 0 0;
         }
 
@@ -84,11 +85,7 @@
             use ValGPT\PessoaFisica as PF;
             use ValGPT\PessoaJuridica as PJ;
 
-            require_once "src/fornecedores/Pagamento.php";
-            require_once "src/prestadores/Pagamento.php";
-            require_once "src/PessoaFisica.php";
-            require_once "src/PessoaJuridica.php";
-            require_once "src/Mei.php";
+            require_once "vendor/autoload.php";
 
             $pagamentoFornecedor = new Pagamento;
 
@@ -131,13 +128,15 @@
 
             <section class="cardsAlbum">
 
-                <div class="artistAlbum corAnanda">
-                    <img src="https://festivalteen.com.br/wp-content/uploads/2022/04/ST28452-scaled-e1650641104718.jpg" alt="">
-                    <h3><?= $clienteMei->getNome() ?></h3>
-                    <p><b>Estilo: </b><?= $clienteMei->getAreaDeAtuacao() ?></p>
-                    <p><b>Album: </b> <?= $clienteMei->getNomeFantasia() ?></p>
-                    <p><b>Ano de Lançamento: </b> <?= $clienteMei->getAnoFundacao() ?></p>
-                </div>
+                
+                    <div class="artistAlbum corAnanda">
+                        <img src="https://festivalteen.com.br/wp-content/uploads/2022/04/ST28452-scaled-e1650641104718.jpg" alt="">
+                        <h3><?= $clienteMei->getNome() ?></h3>
+                        <p><b>Estilo: </b><?= $clienteMei->getAreaDeAtuacao() ?></p>
+                        <p><b>Album: </b> <?= $clienteMei->getNomeFantasia() ?></p>
+                        <p><b>Ano de Lançamento: </b> <?= $clienteMei->getAnoFundacao() ?></p>     
+                    </div>
+                
 
                 <div class="artistAlbum corlou">
                     <img src="https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2023/07/15083009/WhatsApp-Image-2023-07-14-at-16.13.12.jpeg" alt="">

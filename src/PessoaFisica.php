@@ -1,6 +1,6 @@
 <?php
 namespace ValGPT;
-require_once "Cliente.php";
+
 
 final class PessoaFisica extends Cliente {
 
