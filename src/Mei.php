@@ -1,5 +1,5 @@
 <?php
-
+namespace ValGPT;
 require_once "PessoaJuridica.php";
 
 final class Mei extends PessoaJuridica{

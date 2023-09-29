@@ -1,5 +1,5 @@
 <?php
-
+namespace ValGPT;
 class Utilitarios{
     
     // Propriedade estática

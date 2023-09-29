@@ -1,10 +1,6 @@
 <?php
 
-/* Classe Abstrata
-não pode ser instância, ou seja não é 
-possival criar um objeto a partir desta classe.
-ela é usada apenas como modelo
-para a subclasse com herança.  */
+namespace ValGPT;
 abstract class Cliente {
 
     private string $nome;
