@@ -77,13 +77,15 @@
                 <li>Autoload de classes evitando muitos requires e/ou require manuais</li>
             </ul>
 
-            <?php           
+            <?php
 
             use Fornecedor\Pagamento;
             use Prestador\Pagamento as PrestadorPagamento;
+            use ValGPT\Escola;
             use ValGPT\Mei as Mei;
             use ValGPT\PessoaFisica as PF;
             use ValGPT\PessoaJuridica as PJ;
+
 
             require_once "vendor/autoload.php";
 
@@ -128,15 +130,15 @@
 
             <section class="cardsAlbum">
 
-                
-                    <div class="artistAlbum corAnanda">
-                        <img src="https://festivalteen.com.br/wp-content/uploads/2022/04/ST28452-scaled-e1650641104718.jpg" alt="">
-                        <h3><?= $clienteMei->getNome() ?></h3>
-                        <p><b>Estilo: </b><?= $clienteMei->getAreaDeAtuacao() ?></p>
-                        <p><b>Album: </b> <?= $clienteMei->getNomeFantasia() ?></p>
-                        <p><b>Ano de Lançamento: </b> <?= $clienteMei->getAnoFundacao() ?></p>     
-                    </div>
-                
+
+                <div class="artistAlbum corAnanda">
+                    <img src="https://festivalteen.com.br/wp-content/uploads/2022/04/ST28452-scaled-e1650641104718.jpg" alt="">
+                    <h3><?= $clienteMei->getNome() ?></h3>
+                    <p><b>Estilo: </b><?= $clienteMei->getAreaDeAtuacao() ?></p>
+                    <p><b>Album: </b> <?= $clienteMei->getNomeFantasia() ?></p>
+                    <p><b>Ano de Lançamento: </b> <?= $clienteMei->getAnoFundacao() ?></p>
+                </div>
+
 
                 <div class="artistAlbum corlou">
                     <img src="https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2023/07/15083009/WhatsApp-Image-2023-07-14-at-16.13.12.jpeg" alt="">
@@ -153,6 +155,13 @@
                 </div>
             </section>
 
+            <hr>
+
+            <?php
+            $escola = new Escola;
+            ?>
+
+            <pre><?= var_dump($escola) ?></pre>
 
 
     </main>
