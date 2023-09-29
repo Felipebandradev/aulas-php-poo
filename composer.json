@@ -1,0 +1,9 @@
+{
+    "name" : "felipebarbosa/aulas-php-poo",
+    "description" : "Exemplo de Projeto PHP com Orientação a Objetos  e com Classes gerenciadas pelo composer",
+    "autoload" : {
+        "psr-4" : {
+            "ValGPT\\" : "src/"
+        }
+    } 
+}
